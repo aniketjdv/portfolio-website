@@ -22,7 +22,9 @@ html {
 
     --border: #e2e8f0;
 
-    --shadow: rgba(15, 23, 42, 0.08);
+    /* --shadow: rgba(15, 23, 42, 0.08); */
+    --shadow:#4f4e4e 6px 6px 13px -6px;
+
 }
 
 
@@ -343,8 +345,9 @@ header {
 
     color: white;
 
-    box-shadow:
-        0 8px 25px var(--shadow);
+    /* box-shadow:
+        0px 8px 25px var(--shadow); */
+        box-shadow:var(--shadow);
 }
 
 .primary-btn:hover {
@@ -362,6 +365,7 @@ header {
     color: var(--text);
 
     background: var(--surface);
+    box-shadow: var(--shadow);
 }
 
 .secondary-btn:hover {
@@ -568,6 +572,53 @@ footer {
     font-size: 13px;
 }
 
+/* project */
+.project-container{
+    display: flex;
+    margin: 10px;
+    border-top: 1px solid var(--border);
+    /* border-bottom:1px solid var(--border); */
+    padding:10px;
+    width: 100vw;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.card{
+    border: var(--border);
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--surface);
+    margin: 10px;
+    padding:10px 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+    align-content: center;
+
+}
+.card-image img{
+    height: 150px;
+    width: 280px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+.card-btn{
+   width: 18vw;
+    background: #02bcbb;
+    text-decoration: none;
+    height: 8vh;
+    border-radius: 5px;
+    display: flex;
+}
+
+.card:hover{
+    transform: translateY(-2px);
+
+}
 
 /* TABLET */
 
@@ -657,7 +708,6 @@ footer {
 
         padding-top: 60px;
     }
-
     .hero-content h1 {
         font-size: 55px;
 
@@ -666,36 +716,31 @@ footer {
 
     .hero-buttons {
         flex-direction: column;
-
         width: 100%;
-
         max-width: 280px;
     }
-
     .btn {
         text-align: center;
     }
-
     .profile-section {
         min-height: 430px;
     }
-
     .profile-background {
         width: 330px;
         height: 330px;
     }
-
     .profile-image-container {
         width: 290px;
         height: 380px;
     }
-
     .profile-label {
         right: 0;
         bottom: 10px;
     }
-
     .skills-banner {
         margin-top: 40px;
+    }
+    .project-container{
+        flex-direction: column;
     }
 }

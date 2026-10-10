@@ -530,6 +530,47 @@ footer {
 }
 
 /* project */
+/* Projects Heading Section */
+.projects-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 70px 20px 40px;
+}
+
+/* Small Label: MY WORK */
+.projects-heading > p:first-child {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Main Heading */
+.projects-heading h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+/* Highlighted Word */
+.projects-heading h1 span {
+    color: var(--primary);
+}
+
+/* Subtitle */
+.projects-heading .subtitle {
+    color: var(--text-light);
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
 .project-container{
     display: flex;
     margin: 10px;
@@ -590,6 +631,46 @@ footer {
 
 /* about.html*/
 
+/* About Heading Section */
+.about-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 70px 20px 40px;
+}
+
+/* Small Label */
+.about-heading > p:first-child {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Main Heading */
+.about-heading h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+/* Highlighted Text */
+.about-heading h1 span {
+    color: var(--primary);
+}
+
+/* Subtitle */
+.about-heading .subtitle {
+    color: var(--text-light);
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto;
+}
 .about-container{
     display: grid;
     grid-template-columns: auto auto;
@@ -636,6 +717,117 @@ footer {
 }
 .icon4{
     color:#d9690e;
+}
+
+
+/* Contact Page */
+
+.contact-section {
+    width: 90%;
+    max-width: 1000px;
+    min-height: 75vh;
+    margin: auto;
+    padding: 70px 0;
+}
+
+/* Heading */
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contact-heading > p:first-child {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.contact-heading h1 {
+    font-size: clamp(36px, 5vw, 52px);
+    margin-bottom: 15px;
+    color: var(--text, #111827);
+}
+
+.contact-heading h1 span {
+    color: #2563eb;
+}
+
+.contact-heading .subtitle {
+    color: var(--text-light, #64748b);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Contact Cards */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 24px;
+
+    background: var(--surface, #ffffff);
+    border: 1px solid var(--border, #e2e8f0);
+    border-radius: 14px;
+
+    text-decoration: none;
+    color: var(--text, #111827);
+
+    transition: 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: #2563eb;
+    box-shadow: 0 12px 30px var(--shadow, rgba(15, 23, 42, 0.08));
+}
+
+/* Icons */
+
+.contact-icon {
+    min-width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* Text */
+
+.contact-card h3 {
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.contact-card p {
+    color: var(--text-light, #64748b);
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.arrow {
+    margin-left: auto;
+    color: #2563eb;
+    font-size: 21px;
 }
 
 /* TABLET */
@@ -765,5 +957,29 @@ footer {
     .project-container{
        
         align-items: center;
+    }
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+
+    .contact-heading {
+        margin-bottom: 30px;
+    }
+     .about-heading h1 {
+        font-size: 28px;
+    }
+
+    .about-heading > p:first-child {
+        font-size: 12px;
+        letter-spacing: 2px;
     }
 }
